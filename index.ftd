@@ -1,40 +1,53 @@
--- ds.page: Welcome to doc-site
+
+;;hi this is commenting syntax
+;;step1
+-- ftd.column:
+width: fill-container
+;;height: fill-container
+background.solid: #eee
+align-content: center
+spacing.fixed.px: 20
+
+-- card:
+
+-- card: Hyderabad
+
+Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital.
+
+-- card: lucknow
+
+Lucknow, a large city in northern India, is the capital of the state of Uttar Pradesh. Toward its center is Rumi Darwaza, a Mughal gateway. Nearby, the 18th-century Bara Imambara shrine has a huge arched hall.
+-- end: ftd.column
+
+-- component card:
+caption title: Default title
+body description: Default body
+
+-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #c5dff5   
+border-width.px: 3
+padding.px: 20
+border-radius.px: 20
+spacing.fixed.px: 50
+
+-- ftd.image:
+src: https://img.staticmb.com/mbcontent/images/uploads/2022/9/Charminar-Hyderabad.jpg
+height: fill-container
+border-radius.px: 20
+
+-- ftd.column:
+
+-- ftd.text: $card.title
+role: $inherited.types.heading-medium
+
+-- ftd.text: $card.description
+role: $inherited.types.copy-regular
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- end: ftd.column
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- end: ftd.row
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
-
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: card
